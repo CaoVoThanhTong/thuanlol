@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { teachersData } from '../data/teachers';
 import './Teachers.css';
 
-const Teachers = ({ setShowBookingModal, setSelectedTeacher }) => {
+const Teachers = ({ setShowBookingModal, setSelectedTeacher, onTeacherClick }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSpecialty, setSelectedSpecialty] = useState('');
   const [priceRange, setPriceRange] = useState('');
@@ -175,6 +175,12 @@ const Teachers = ({ setShowBookingModal, setSelectedTeacher }) => {
               </div>
               
               <div className="teacher-actions">
+                <button 
+                  className="view-profile-btn"
+                  onClick={() => onTeacherClick(teacher)}
+                >
+                  Xem chi tiết
+                </button>
                 <button 
                   className="book-trial-btn"
                   onClick={() => handleBookingClick(teacher)}

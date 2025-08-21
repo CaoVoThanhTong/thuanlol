@@ -262,21 +262,43 @@
 }
 
 .teacher-actions {
-  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.view-profile-btn {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  max-width: 120px;
+}
+
+.view-profile-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .book-trial-btn {
   background: linear-gradient(45deg, #ff6b6b, #ee5a24);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
-  max-width: 200px;
+  flex: 1;
+  max-width: 120px;
 }
 
 .book-trial-btn:hover {
